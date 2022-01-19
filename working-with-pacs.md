@@ -52,9 +52,45 @@ Datasheet P. 312-313 contains summary of GPIO register map:
 ![Screen Shot 2022-01-16 at 3 18 28 PM](https://user-images.githubusercontent.com/73720500/149676583-86b35442-d411-4189-8a92-a1689fbf7075.png)
 ![Screen Shot 2022-01-16 at 3 18 55 PM](https://user-images.githubusercontent.com/73720500/149676587-2d4b7369-85f7-4f91-92f3-0cc39c3d3145.png)
 
-# NRF Examples
+# Embedded HAL
 
-## [Blinky button demo](https://github.com/nrf-rs/nrf-hal/blob/master/examples/blinky-button-demo)
+- Create [embedded-hal](https://crates.io/crates/embedded-hal)
+- Docs [Crate embedded_hal](https://docs.rs/embedded-hal/0.2.6/embedded_hal/)
+
+# NRF Crates
+
+## NRF HAL
+
+- [Crate nrf52_hal](https://docs.rs/nrf52-hal/0.0.1/nrf52_hal/)
+  - Reexports [Crate nrf52](https://docs.rs/nrf52/0.1.0/nrf52/index.html)
+  - How to use [Peripheral API](https://docs.rs/svd2rust/0.12.0/svd2rust/#peripheral-api)
+    - Peripherals::take method
+  - Contains [Struct nrf52::Peripherals](https://docs.rs/nrf52/0.1.0/nrf52/struct.Peripherals.html)
+  - P0 GPIO
+
+## NRF 52840
+
+Nordic spec (datasheet): [nRF52840 Product Specification v1.7](https://infocenter.nordicsemi.com/pdf/nRF52840_PS_v1.7.pdf)
+
+[All nRF52840 crates](https://crates.io/search?q=nrf52840)
+
+- [adafruit-nrf52840-express](https://crates.io/crates/adafruit-nrf52840-express)
+- [adafruit-nrf52840-sense](https://crates.io/crates/adafruit-nrf52840-sense)
+- [Crate nrf52840_pac](https://docs.rs/nrf52840-pac/0.10.1/nrf52840_pac/)
+  - Repo (includes SVD files): [PACs for nRF microcontrollers](https://github.com/nrf-rs/nrf-pacs)
+    - Says: For a more user-friendly interface to the peripherals, the nrf-hal crates might be more appropriate.
+  - [Module nrf52840_pac::p0](https://docs.rs/nrf52840-pac/0.10.1/nrf52840_pac/p0/index.html)
+    - [Struct nrf52840_pac::p0::RegisterBlock](https://docs.rs/nrf52840-pac/0.10.1/nrf52840_pac/p0/struct.RegisterBlock.html)
+  - [Struct nrf52840_pac::P0](https://docs.rs/nrf52840-pac/0.10.1/nrf52840_pac/struct.P0.html)
+  - [Struct nrf52840_pac::P1](https://docs.rs/nrf52840-pac/0.10.1/nrf52840_pac/struct.P1.html)
+
+# NRF HAL Crates
+
+- Repo [nrf-hal](https://github.com/nrf-rs/nrf-hal/)
+
+## Examples
+
+### [Blinky button demo](https://github.com/nrf-rs/nrf-hal/blob/master/examples/blinky-button-demo)
 - [main.rs](https://github.com/nrf-rs/nrf-hal/blob/master/examples/blinky-button-demo/src/main.rs)
 
 ```
@@ -93,7 +129,7 @@ fn main() -> ! {
 }
 ```
 
-## [SPI Master Demo](https://github.com/nrf-rs/nrf-hal/tree/master/examples/spi-demo)
+### [SPI Master Demo](https://github.com/nrf-rs/nrf-hal/tree/master/examples/spi-demo)
 
 [main.rs](https://github.com/nrf-rs/nrf-hal/blob/master/examples/spi-demo/src/main.rs)
 
