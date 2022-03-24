@@ -6,6 +6,13 @@ Reference manual
 STM32L47xxx, STM32L48xxx, STM32L49xxx and STM32L4Axxx
 advanced Arm®-based 32-bit MCUs](https://www.st.com/resource/en/reference_manual/rm0351-stm32l47xxx-stm32l48xxx-stm32l49xxx-and-stm32l4axxx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
 - List: [Curated list of resources for Embedded and Low-level development in the Rust programming language](https://github.com/rust-embedded/awesome-embedded-rust)
+- The Embedded Rust Book: [Recommendations for GPIO Interfaces](https://doc.rust-lang.org/beta/embedded-book/design-patterns/hal/gpio.html)
+- Discovery (embedded Rust book): [Rust Embedded terminology](https://docs.rust-embedded.org/discovery/microbit/04-meet-your-hardware/terminology.html)
+- Video: ["Type-Driven API Design in Rust" by Will Crichton](https://www.youtube.com/watch?v=bnnacleqg6k)
+- Blog post: [Type-level Programming in Rust](https://willcrichton.net/notes/type-level-programming/)
+- Blog post: [Typestates in Rust](https://yoric.github.io/post/rust-typestate/)
+- Blog post: [Using Type-Level Programming in Rust to Make Safer Hardware Abstractions](https://blog.auxon.io/2019/10/25/type-level-registers/)
+- Blog post: [The GPIO war: macro bunkers for typestate explosions](https://www.ecorax.net/macro-bunker-1/) and [part 2](https://www.ecorax.net/macro-bunker-2/)
 
 # Mapping From SVD to Datasheet
 ## Blog Post
@@ -263,3 +270,6 @@ fn main() -> ! {
     loop {}
 }
 ```
+# Typestate
+
+TODO: add explanation of typestate and type-level programming to illustrate "typestate machine" as used in above demo to transform pin.
