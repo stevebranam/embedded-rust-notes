@@ -8,11 +8,17 @@ advanced Arm®-based 32-bit MCUs](https://www.st.com/resource/en/reference_manua
 - List: [Curated list of resources for Embedded and Low-level development in the Rust programming language](https://github.com/rust-embedded/awesome-embedded-rust)
 - The Embedded Rust Book: [Recommendations for GPIO Interfaces](https://doc.rust-lang.org/beta/embedded-book/design-patterns/hal/gpio.html)
 - Discovery (embedded Rust book): [Rust Embedded terminology](https://docs.rust-embedded.org/discovery/microbit/04-meet-your-hardware/terminology.html)
+
+Type-level programming and typestate:
 - Video: ["Type-Driven API Design in Rust" by Will Crichton](https://www.youtube.com/watch?v=bnnacleqg6k)
 - Blog post: [Type-level Programming in Rust](https://willcrichton.net/notes/type-level-programming/)
 - Blog post: [Typestates in Rust](https://yoric.github.io/post/rust-typestate/)
 - Blog post: [Using Type-Level Programming in Rust to Make Safer Hardware Abstractions](https://blog.auxon.io/2019/10/25/type-level-registers/)
 - Blog post: [The GPIO war: macro bunkers for typestate explosions](https://www.ecorax.net/macro-bunker-1/) and [part 2](https://www.ecorax.net/macro-bunker-2/)
+
+Other people's example projects:
+- Blog post: [Using Rust for a simple hardware project](https://blog.tonari.no/rust-simple-hardware-project)
+- Blog post: [Writing embedded firmware using Rust](https://www.anyleaf.org/blog/writing-embedded-firmware-using-rust)
 
 # Mapping From SVD to Datasheet
 ## Blog Post
