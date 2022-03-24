@@ -54,7 +54,7 @@ Datasheet P. 312-313 contains summary of GPIO register map:
 
 # Embedded HAL
 
-- Create [embedded-hal](https://crates.io/crates/embedded-hal)
+- Crate [embedded-hal](https://crates.io/crates/embedded-hal)
 - Docs [Crate embedded_hal](https://docs.rs/embedded-hal/0.2.6/embedded_hal/)
 
 # NRF Crates
